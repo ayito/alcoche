@@ -1,0 +1,188 @@
+{
+ "actions": [],
+ "allow_guest_to_view": 1,
+ "allow_import": 1,
+ "autoname": "autoincrement",
+ "creation": "2024-09-22 03:51:35.918712",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "fabricante",
+  "modelo",
+  "anyo",
+  "color",
+  "caducidad_del_seguro",
+  "obtener_el_sumario",
+  "sumario",
+  "column_break_trsp",
+  "auditoria_completada",
+  "auto",
+  "matricula",
+  "imagen",
+  "publicar",
+  "route",
+  "estado",
+  "puntuacion"
+ ],
+ "fields": [
+  {
+   "fieldname": "fabricante",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Fabricante",
+   "reqd": 1
+  },
+  {
+   "fieldname": "anyo",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "A\u00f1o",
+   "non_negative": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "matricula",
+   "fieldtype": "Data",
+   "label": "Matr\u00edcula"
+  },
+  {
+   "fieldname": "column_break_trsp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "modelo",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Modelo",
+   "reqd": 1
+  },
+  {
+   "fieldname": "color",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Color",
+   "reqd": 1
+  },
+  {
+   "fieldname": "auto",
+   "fieldtype": "Data",
+   "label": "Auto",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "publicar",
+   "fieldtype": "Check",
+   "label": "publicar"
+  },
+  {
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "label": "Ruta"
+  },
+  {
+   "fieldname": "imagen",
+   "fieldtype": "Attach Image",
+   "label": "Imagen"
+  },
+  {
+   "fieldname": "caducidad_del_seguro",
+   "fieldtype": "Date",
+   "label": "Caducidad del seguro",
+   "reqd": 1
+  },
+  {
+   "fieldname": "estado",
+   "fieldtype": "Select",
+   "label": "Estado",
+   "options": "Activo\nFuera de servicio\nVendido\nAveriado"
+  },
+  {
+   "fieldname": "puntuacion",
+   "fieldtype": "Rating",
+   "label": "Puntuaci\u00f3n"
+  },
+  {
+   "fieldname": "sumario",
+   "fieldtype": "HTML",
+   "label": "Sumario"
+  },
+  {
+   "fieldname": "obtener_el_sumario",
+   "fieldtype": "Button",
+   "label": "Obtener el sumario"
+  },
+  {
+   "default": "0",
+   "fieldname": "auditoria_completada",
+   "fieldtype": "Check",
+   "label": "\u00bfAuditor\u00eda completada?",
+   "permlevel": 1
+  }
+ ],
+ "has_web_view": 1,
+ "hide_toolbar": 1,
+ "index_web_pages_for_search": 1,
+ "is_published_field": "publicar",
+ "links": [],
+ "modified": "2024-10-10 20:24:36.994743",
+ "modified_by": "Administrator",
+ "module": "Alcoche",
+ "name": "Vehiculos",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "if_owner": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Gestor de vehiculos",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Auditor de vehiculos",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "permlevel": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Auditor de vehiculos",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "route": "vehiculos",
+ "show_title_field_in_link": 1,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "auto",
+ "translated_doctype": 1
+}

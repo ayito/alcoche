@@ -120,7 +120,12 @@ app_license = "mit"
 # permission_query_conditions = {
 # 	"Event": "frappe.desk.doctype.event.event.get_permission_query_conditions",
 # }
-#
+
+permission_query_conditions = {
+	"Vehiculos": "alcoche.api.get_permission_query_conditions",
+}
+
+
 # has_permission = {
 # 	"Event": "frappe.desk.doctype.event.event.has_permission",
 # }
@@ -145,6 +150,12 @@ app_license = "mit"
 # 	}
 # }
 
+doc_events = {
+	"ToDo": {
+		"before_insert":"alcoche.api.throw_emoji",
+	}
+}
+
 # Scheduled Tasks
 # ---------------
 
@@ -165,6 +176,14 @@ app_license = "mit"
 # 		"alcoche.tasks.monthly"
 # 	],
 # }
+
+scheduler_events = {
+	"cron": {
+		"30 15 * * 3": [
+			"alcoche.api.enviar_recuerdos"
+		]
+	}
+}
 
 # Testing
 # -------

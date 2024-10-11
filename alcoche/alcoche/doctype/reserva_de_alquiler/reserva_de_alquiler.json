@@ -1,0 +1,125 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-09-27 20:08:36.691219",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_6psg",
+  "pedido",
+  "vehiculo",
+  "amended_from",
+  "column_break_zvmv",
+  "conductor",
+  "observaci\u00f3n",
+  "section_break_yzvu",
+  "trayectos",
+  "section_break_qvjb",
+  "tasa",
+  "column_break_uldp",
+  "cantidad_total"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_6psg",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Reserva de alquiler",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "column_break_zvmv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "conductor",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Conductor",
+   "options": "Conductor",
+   "reqd": 1
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "observaci\u00f3n",
+   "fieldtype": "Data",
+   "label": "Observaci\u00f3n"
+  },
+  {
+   "fieldname": "section_break_yzvu",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "trayectos",
+   "fieldtype": "Table",
+   "label": "Trayectos",
+   "options": "Elemento de reserva de alquiler"
+  },
+  {
+   "fieldname": "section_break_qvjb",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "tasa",
+   "fieldtype": "Currency",
+   "label": "Tasa"
+  },
+  {
+   "fieldname": "column_break_uldp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "cantidad_total",
+   "fieldtype": "Currency",
+   "label": "Cantidad Total",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "orden.veh\u00edculo",
+   "fieldname": "vehiculo",
+   "fieldtype": "Link",
+   "label": "Veh\u00edculo",
+   "options": "Vehiculos"
+  },
+  {
+   "fieldname": "pedido",
+   "fieldtype": "Link",
+   "label": "Pedido",
+   "options": "Pedido de alquiler",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-09-29 14:01:17.787764",
+ "modified_by": "Administrator",
+ "module": "Alcoche",
+ "name": "Reserva de alquiler",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

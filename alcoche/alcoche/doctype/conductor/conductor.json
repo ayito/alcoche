@@ -1,0 +1,107 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "format:DR-{####}",
+ "creation": "2024-09-21 20:45:14.342224",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "conductora_section",
+  "activo",
+  "nombre",
+  "primer_apellido",
+  "segundo_apellido",
+  "nombre_completo",
+  "column_break_bufg",
+  "telefono",
+  "num_de_licencia",
+  "foto"
+ ],
+ "fields": [
+  {
+   "fieldname": "conductora_section",
+   "fieldtype": "Section Break",
+   "label": "Conductor/a"
+  },
+  {
+   "default": "1",
+   "fieldname": "activo",
+   "fieldtype": "Check",
+   "label": "Activo?"
+  },
+  {
+   "fieldname": "nombre",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Nombre",
+   "reqd": 1
+  },
+  {
+   "fieldname": "primer_apellido",
+   "fieldtype": "Data",
+   "label": "Primer Apellido"
+  },
+  {
+   "fieldname": "segundo_apellido",
+   "fieldtype": "Data",
+   "label": "Segundo Apellido"
+  },
+  {
+   "fieldname": "column_break_bufg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "foto",
+   "fieldtype": "Attach Image",
+   "label": "Foto"
+  },
+  {
+   "fieldname": "telefono",
+   "fieldtype": "Phone",
+   "label": "Tel\u00e9fono"
+  },
+  {
+   "fieldname": "num_de_licencia",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "N\u00ba de licencia",
+   "reqd": 1
+  },
+  {
+   "fieldname": "nombre_completo",
+   "fieldtype": "Data",
+   "is_virtual": 1,
+   "label": "Nombre Completo",
+   "options": "f\"{doc.nombre} {doc.primer_apellido}\""
+  }
+ ],
+ "image_field": "foto",
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-09-23 20:22:53.876917",
+ "modified_by": "Administrator",
+ "module": "Alcoche",
+ "name": "Conductor",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "nombre",
+ "track_changes": 1
+}

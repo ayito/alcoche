@@ -1,0 +1,17 @@
+{% extends "templates/web.html" %}
+
+{% block page_content %}
+<h1>{{ title |e }}</h1>
+<h2>Color: {{ doc.color |e }}</h2>
+
+{% if doc.imagen %}
+	<img src = "{{ doc.imagen |e }}" />
+{% else %}
+	<span>La imagen vehículo no está disponible en estos momentos.</span>
+{% endif %}
+
+<a  class="btn btn-info" href="/solicitud-de-alquiler/new?vehiculo={{ title |e }}">Solicita el alquiler!</a>
+
+{% endblock %}
+
+<!-- this is a sample default web page template -->

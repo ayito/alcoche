@@ -1,0 +1,49 @@
+{
+ "add_total_row": 1,
+ "columns": [
+  {
+   "fieldname": "fabricante",
+   "fieldtype": "Data",
+   "label": "Fabricante",
+   "width": 600
+  },
+  {
+   "fieldname": "cuenta",
+   "fieldtype": "Int",
+   "label": "N\u00ba de veh\u00edculos",
+   "width": 200
+  }
+ ],
+ "creation": "2024-09-30 02:16:28.319296",
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [
+  {
+   "fieldname": "fabricante",
+   "fieldtype": "Data",
+   "label": "Fabricante",
+   "mandatory": 0,
+   "wildcard_filter": 1
+  }
+ ],
+ "idx": 0,
+ "is_standard": "Yes",
+ "letterhead": null,
+ "modified": "2024-09-30 03:05:14.268566",
+ "modified_by": "Administrator",
+ "module": "Alcoche",
+ "name": "Veh\u00edculos por fabricante",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "query": "SELECT fabricante, COUNT(*) as cuenta\nFROM tabVehiculos\nGROUP BY fabricante\nHAVING fabricante LIKE %(fabricante)s;",
+ "ref_doctype": "Vehiculos",
+ "report_name": "Veh\u00edculos por fabricante",
+ "report_type": "Query Report",
+ "roles": [
+  {
+   "role": "System Manager"
+  }
+ ],
+ "timeout": 0
+}

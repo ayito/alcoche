@@ -1,0 +1,101 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:RO-{YYYY}-{MM}-{###}",
+ "creation": "2024-09-25 11:13:26.006177",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "solicitud_de_alquiler_section",
+  "nombre_de_cliente",
+  "tel\u00e9fono_de_contacto",
+  "fecha_de_salida",
+  "vehiculo",
+  "column_break_ncwb",
+  "estado",
+  "direcci\u00f3n_de_recogida",
+  "situaci\u00f3n"
+ ],
+ "fields": [
+  {
+   "fieldname": "nombre_de_cliente",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Nombre de cliente",
+   "reqd": 1
+  },
+  {
+   "fieldname": "tel\u00e9fono_de_contacto",
+   "fieldtype": "Phone",
+   "in_list_view": 1,
+   "label": "Tel\u00e9fono de contacto",
+   "reqd": 1
+  },
+  {
+   "fieldname": "fecha_de_salida",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "label": "Fecha de salida",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_ncwb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Nuevo",
+   "fieldname": "estado",
+   "fieldtype": "Select",
+   "label": "Estado",
+   "options": "Nuevo\nAceptado\nRechazado"
+  },
+  {
+   "fieldname": "direcci\u00f3n_de_recogida",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Direcci\u00f3n de recogida",
+   "reqd": 1
+  },
+  {
+   "fieldname": "solicitud_de_alquiler_section",
+   "fieldtype": "Section Break",
+   "label": "Solicitud de alquiler"
+  },
+  {
+   "fieldname": "situaci\u00f3n",
+   "fieldtype": "Geolocation",
+   "label": "Situaci\u00f3n"
+  },
+  {
+   "fieldname": "vehiculo",
+   "fieldtype": "Link",
+   "label": "Vehiculo",
+   "link_filters": "[[\"Vehiculos\",\"anyo\",\">\",2022]]",
+   "options": "Vehiculos"
+  }
+ ],
+ "links": [],
+ "modified": "2024-10-11 07:16:09.470249",
+ "modified_by": "Administrator",
+ "module": "Alcoche",
+ "name": "Pedido de alquiler",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

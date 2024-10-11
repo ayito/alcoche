@@ -1,0 +1,29 @@
+{
+ "attach_print": 0,
+ "channel": "Email",
+ "condition": "",
+ "creation": "2024-09-30 00:31:43.803394",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Pedido de alquiler",
+ "enabled": 1,
+ "event": "New",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "Hola, se ha creado una nueva solicitud.\n\n<a href=\"http://irfan.cabs:8000/app\"> Pulsa aqu\u00ed para verlo!</a>\n\nUn saludo,\n\nEl equipo de irfan.cabs.",
+ "message_type": "HTML",
+ "modified": "2024-09-30 00:31:43.803394",
+ "modified_by": "Administrator",
+ "module": "Alcoche",
+ "name": "Nuevo pedido",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "receiver_by_role": "System Manager"
+  }
+ ],
+ "send_system_notification": 0,
+ "send_to_all_assignees": 0,
+ "subject": "{{ doc.nombre_de_cliente}} realiz\u00f3 un pedido"
+}
