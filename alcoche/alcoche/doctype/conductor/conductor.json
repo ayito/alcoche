@@ -73,13 +73,13 @@
    "fieldtype": "Data",
    "is_virtual": 1,
    "label": "Nombre Completo",
-   "options": "f\"{doc.nombre} {doc.primer_apellido}\""
+   "options": "f\"{doc.nombre} {doc.primer_apellido} {doc.segundo_apellido}\""
   }
  ],
  "image_field": "foto",
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-09-23 20:22:53.876917",
+ "modified": "2024-10-11 15:00:20.494333",
  "modified_by": "Administrator",
  "module": "Alcoche",
  "name": "Conductor",

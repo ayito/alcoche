@@ -10,7 +10,7 @@ class Vehiculos(WebsiteGenerator):
 		self.set_auto()
 
 	def set_auto(self):
-		self.auto = f"{self.fabricante} {self.modelo}, {self.anyo}"
-
-
-
+		if self.anyo:
+			self.auto = f"{self.fabricante} {self.modelo}, {self.anyo}"
+		else:
+			self.auto = f"{self.fabricante} {self.modelo}"

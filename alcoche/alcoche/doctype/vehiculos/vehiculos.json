@@ -14,6 +14,7 @@
   "caducidad_del_seguro",
   "obtener_el_sumario",
   "sumario",
+  "tipo",
   "column_break_trsp",
   "auditoria_completada",
   "auto",
@@ -37,8 +38,7 @@
    "fieldtype": "Int",
    "in_list_view": 1,
    "label": "A\u00f1o",
-   "non_negative": 1,
-   "reqd": 1
+   "non_negative": 1
   },
   {
    "fieldname": "matricula",
@@ -118,6 +118,12 @@
    "fieldtype": "Check",
    "label": "\u00bfAuditor\u00eda completada?",
    "permlevel": 1
+  },
+  {
+   "fieldname": "tipo",
+   "fieldtype": "Link",
+   "label": "Tipo",
+   "options": "Tipo de vehiculo"
   }
  ],
  "has_web_view": 1,
@@ -125,7 +131,7 @@
  "index_web_pages_for_search": 1,
  "is_published_field": "publicar",
  "links": [],
- "modified": "2024-10-10 20:24:36.994743",
+ "modified": "2024-10-11 20:10:02.457580",
  "modified_by": "Administrator",
  "module": "Alcoche",
  "name": "Vehiculos",
